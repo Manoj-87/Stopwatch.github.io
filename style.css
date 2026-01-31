@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: linear-gradient(to right, #1f2937, #3b82f6);
+  color: #fff;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  text-align: center;
+  max-width: 400px;
+  padding: 30px;
+  background-color: #111827;
+  border-radius: 25px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.6);
+}
+
+h1 {
+  margin-bottom: 25px;
+  font-size: 2.2rem;
+  color: #60a5fa;
+}
+
+.circle {
+  width: 250px;
+  height: 250px;
+  margin: 0 auto 25px;
+  background: conic-gradient(#60a5fa, #2563eb);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.time-display {
+  background-color: #1e293b;
+  padding: 25px;
+  border-radius: 50%;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #f8fafc;
+  min-width: 190px;
+  letter-spacing: 1.5px;
+  text-align: center;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+button {
+  background-color: #3b82f6;
+  border: none;
+  padding: 10px 22px;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  background-color: #2563eb;
+}
+
+.laps {
+  text-align: left;
+  max-height: 180px;
+  overflow-y: auto;
+  border-top: 1px solid #334155;
+  padding-top: 10px;
+}
+
+.laps p {
+  margin: 5px 0;
+  font-size: 0.95rem;
+  color: #cbd5e1;
+}
