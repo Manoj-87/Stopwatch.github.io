@@ -2,24 +2,49 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>StopWatch</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Spotwatch | Professional Stopwatch</title>
+
+  <!-- Font -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-  <div class="container">
+
+  <main class="app">
+
     <h1>Spotwatch</h1>
-    <div class="circle">
-      <div class="time-display" id="display">00:00:00:00</div>
+    <p class="status" id="status">Stopped</p>
+
+    <!-- Timer -->
+    <div class="timer-box">
+      <div class="circle" id="circle">
+        <div class="time" id="display">00:00:00.00</div>
+      </div>
     </div>
-    <div class="buttons">
-      <button id="startStop">Start</button>
-      <button id="reset">Reset</button>
-      <button id="lap">Lap</button>
+
+    <!-- Controls -->
+    <div class="controls">
+
+      <button id="start" class="start">Start</button>
+
+      <button id="reset" class="reset">Reset</button>
+
+      <button id="lap" class="lap">Lap</button>
+
     </div>
+
+    <!-- Laps -->
     <div class="laps" id="laps"></div>
-  </div>
+
+  </main>
+
+  <!-- JS -->
   <script src="script.js"></script>
+
 </body>
 </html>
